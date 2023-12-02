@@ -1,5 +1,3 @@
-
-
 def main():
     input = None
     with open('input.txt', 'r') as f:
