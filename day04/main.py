@@ -24,10 +24,9 @@ def part2(cards):
     copies = {x: 1 for x in range(1, len(cards) + 1)}
 
     for card_idx in range(1, len(cards)):
-        for copy_count in range(copies[card_idx]):
-            new_copies = get_win_count(cards[card_idx - 1])
-            for i in range(card_idx + 1, card_idx + new_copies + 1):
-                copies[i] = copies[i] + 1
+        new_copies = get_win_count(cards[card_idx - 1])
+        for incremented_copy in range(card_idx + 1, card_idx + new_copies + 1):
+            copies[incremented_copy] += copies[card_idx]
 
     return sum(copies.values())
 
