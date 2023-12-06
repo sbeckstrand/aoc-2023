@@ -41,4 +41,5 @@ def part2(input):
     }]
 
     return(find_faster_times(races))
+
 main()
