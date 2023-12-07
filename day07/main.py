@@ -1,12 +1,12 @@
 hand_priorities = {
-        'five_of_a_kind': 1,
-        'four_of_a_kind': 2,
-        'full_house': 3,
-        'three_of_a_kind': 4,
-        'two_pair': 5,
-        'one_pair': 6,
-        'high_card': 7
-    }
+    'five_of_a_kind': 1,
+    'four_of_a_kind': 2,
+    'full_house': 3,
+    'three_of_a_kind': 4,
+    'two_pair': 5,
+    'one_pair': 6,
+    'high_card': 7
+}
 
 def main():
     input = None
