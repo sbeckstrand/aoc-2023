@@ -32,8 +32,9 @@ def count_steps(input, multi=False):
         for pos in curr_pos:
             try:
                 new_pos = map[pos][dirs[curr_dir]]
-            except:
-                print("input not valid for part 1")
+            except KeyError:
+                print("Invalid input for part 1")
+                exit(1)
             if new_pos[-1] == 'Z':
                 to_remove.append(pos)
             else:
